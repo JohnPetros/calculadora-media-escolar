@@ -13,6 +13,8 @@ Projeto de uma calculadora que calcula a média das notas de um aluno de um ano 
  <h3 align="center"><a target="_blank" href="https://media-calculator-php.herokuapp.com/">Veja a Calculadora funcionando 👀</a></h3>
 
 <hr>
+<br>
+
 
 ## ⚙️ Como Funciona
 A página pede que o aluno insira 4 notas referente aos 4 bimestres letivos. Os dados são enviados para o PHP que então calcula a média e retorna uma mensagem dizendo se ele está aprovado, em recuperação ou reprovado.
