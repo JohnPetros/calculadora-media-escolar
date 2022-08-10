@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php if ($errorMessage != '') {
                     echo $errorMessage;
                 } elseif (isset($media)) {
-                    echo "Sua média é <span class='media'>$media</span> <p class='status'>$statusMessage</p>";
+                    echo "Sua média é <span class='media'>$media</span>.<p class='status'>$statusMessage</p>";
                 }
                 ?>
             </p>
