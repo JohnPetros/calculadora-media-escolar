@@ -17,8 +17,14 @@ Projeto de uma calculadora que calcula a média das notas de um aluno de um ano 
 ## ⚙️ Como Funciona
 A página pede que o aluno insira 4 notas referente aos 4 bimestres letivos. Os dados são enviados para o PHP que então calcula a média e retorna uma mensagem dizendo se ele está aprovado, em recuperação ou reprovado.
 
+<br>
+
+
 ## 📖 O que eu aprendi durante o desenvolvimento
 Aprendi a integrar melhor HTML com PHP, enviar dados pelo método POST e também trabalhar com funções PHP usados normalmente para validação de dados, como isset, empty e isnumeric.
+
+<br>
+
 
 ## 🛠️ Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias
