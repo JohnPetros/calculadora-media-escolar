@@ -3,12 +3,13 @@ $media;
 $errorMessage = $statusMessage = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // REVEBER NOTAS ENVIADAS
     $grade1 = $_POST['grade-1'];
     $grade2 = $_POST['grade-2'];
     $grade3 = $_POST['grade-3'];
     $grade4 = $_POST['grade-4'];
 
-    // Verificar se alguma nota está vazia
+    // VERIFICAR SE ALGUMA NOTA ESTÁ VAZIA
     if (
         empty($grade1) ||
         empty($grade2) ||
@@ -17,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ) {
         $errorMessage = "Por favor, escrevas todas as notas.";
     } else {
-        // Verificar se é numérico
+        // VERIFICAR SE É VALOR NUMÉRICO
         if (
             !is_numeric($grade1) ||
             !is_numeric($grade2) ||
@@ -26,10 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ) {
             $errorMessage = "Por favor, escreva apenas números.";
         } else {
-            // Calcular média
+            // CALCULAR MÉDIA
             $media = ($grade1 + $grade2 + $grade3 + $grade4) / 4;
 
-            // Verificar status do aluno
+            // DEFINIR STATUS DO ALUNO
             if ($media <= 4) {
                 $statusMessage = "Você está <span class='status-desapproved'>REPROVADO!</span> 😭";
             } elseif ($media <= 6) {
@@ -59,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <main class="container">
         <h1>Insira suas notas</h1>
         <form class="bimesters" method="POST">
+            <!-- CAMPOS PARA INSERIR AS NOTAS -->
             <div class="bimester">
                 <label for="">1º Bimestre:</label>
                 <input class="grade" name="grade-1" type="text" autofocus <?php if (!empty($_POST["grade-1"])) echo "value='" . $_POST["grade-1"] . "'" ?>>
@@ -75,13 +77,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="">4º Bimestre:</label>
                 <input class="grade" name="grade-4" type="text" <?php if (!empty($_POST["grade-4"])) echo "value='" . $_POST["grade-4"] . "'" ?>>
             </div>
+            <!--  -->
             <button class="calculate-button">Calcular Média</button>
         </form>
 
         <div class="result">
             <p>
+            <!-- EXIBIR MENSAGEM DE ERRO -->
                 <?php if ($errorMessage != '') {
                     echo $errorMessage;
+            //  EXIBIR STATUS DO ALUNO
                 } elseif (isset($media)) {
                     echo "Sua média é <span class='media'>$media</span><p class='status'>$statusMessage</p>";
                 }
