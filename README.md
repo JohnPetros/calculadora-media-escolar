@@ -10,7 +10,7 @@
 
 Projeto de uma calculadora que calcula a média das notas de um aluno de um ano escolar.
 
- <h3 align="center"><a target="_blank" href="https://media-calculator-php.herokuapp.com/">Veja a Calculadora funcionando 👀</a></h3>
+ <h3 align="center"><a target="_blank" href="https://pokedex-php.000webhostapp.com/index.php">Veja a Calculadora funcionando 👀</a></h3>
 
 <hr>
 <br>
