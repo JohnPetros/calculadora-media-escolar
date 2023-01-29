@@ -1,5 +1,5 @@
 <h1 align="center">
-  Calculadora
+  Calculadora de média escolar
 </h1>
 
 ![Calcula Média - Google Chrome 10_08_2022 11_15_10](https://user-images.githubusercontent.com/93893533/183924066-e55c2561-b216-4515-a467-639629fb41fa.png)
